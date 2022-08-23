@@ -119,9 +119,9 @@ html,body
     height: 75%;
 }
 
-.text  {
+#text  {
     text-align: center;
-    max-width: 10.5in;
+    max-width: 12in;
     max-height: 100px;
     flex: 1;
 
