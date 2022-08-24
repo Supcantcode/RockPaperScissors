@@ -1,7 +1,7 @@
 let countUp = 1
 let playerHealth = 5
 let enemyHealth = 5
-let countDown = 5
+let countDown = 30
 let result = ''
 
 const buttons = document.querySelectorAll('button')
@@ -79,7 +79,7 @@ function playRound(playerAttack){
 
 // if rounds reach 0
 function gameOver() {
-    if (countDown <= 0){
+    if (playerHealth <= 0 || enemyHealth <= 0){
         buttons.forEach(elem => {
             elem.disabled = true
         })
