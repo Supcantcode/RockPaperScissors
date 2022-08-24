@@ -28,9 +28,9 @@
                 <div class="stats">
                     <div class="stat-text">
                         <h3>STATS</h3>
-                        <h4 id="round">Lv:1</h4>
-                        <h4 id="hp">HP:5</h4>
-                        <h4 id="count-down">MP:5</h4>
+                        <h4 id="count-up"></h4>
+                        <h4 id="hp"></h4>
+                        <h4 id="count-down"></h4>
                         <h4>ATK:25</h4>
                         <h4>DEF:16</h4>
                         <h4>LCK:10</h4>
@@ -40,9 +40,9 @@
                 <div class="button-border">
                     <div><h3>ATTACK</h3></div>
                     <div class="buttons">
-                        <div class="button"><button class="nes-btn">Rock</button></div>
-                        <div class="button"><button class="nes-btn">Paper</button></div>
-                        <div class="button"><button class="nes-btn">Scissors</button></div>
+                        <div class="button"><button class="nes-btn" onclick="playRound('rock')">Rock</button></div>
+                        <div class="button"><button class="nes-btn" onclick="playRound('paper')">>Paper</button></div>
+                        <div class="button"><button class="nes-btn" onclick="playRound('scissors')">>Scissors</button></div>
                     </div>
                 </div>
             </div>
@@ -51,11 +51,10 @@
                     <img src="./images/FF4PSP_Golbez_Boss.webp" alt="an evil knight">
                 </div>
 
-                <div id="text">
-                    <p>An evil knight blocks your path. He challenges you to a game of Rock Paper Scissors. beat him and you may pass.</p>
+                <div>
+                    <p id="text"></p>
                 </div>
             </div>
-            
         </div>
     </div>
 
